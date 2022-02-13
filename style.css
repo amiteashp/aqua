@@ -1,0 +1,176 @@
+/* Global Attributes */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #076ae1;
+    font-family: 'Trebuchet MS', Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #afe532;
+}
+
+body h2{
+    padding-top: 1%;
+    text-align: center;
+}
+
+
+/* Logo */
+.logo{
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    padding: 1%;
+}
+
+/* Logo Size Responsive to Device */
+@media screen and (max-width: 750px) {
+    img.logo {width: 40%;}
+}
+
+
+/* Navigation Bar */
+.menu{
+    display: flex;
+    position: relative;
+    width: 60%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+    background: #0769e1;
+    overflow: none;
+}
+
+/* menuitem rules (Used in NavBar and Footer menus) */
+.menuitem{
+    display: inline;
+    height: auto;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menuitem a{
+    display: inline-block;
+    color: #afe532;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menuitem a:hover{
+    background-color: #054088;
+    text-decoration: underline;
+}
+
+
+/* Navigation Bar Responsive to Device*/
+@media screen and (max-width: 700px) {
+    ul.menu {flex-direction: column;} 
+    ul.menu li {text-align: center;}
+}
+
+/* Hamburger Menu */
+
+#hamburger{
+    display: block;
+    border-radius: 20%;
+    max-width: 5%;
+    height: auto;
+    position: fixed;
+    top: 5%;
+    left: 2%;
+    opacity: 0;
+    cursor: initial;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+#hamburger:hover{
+    background: #afe53250;
+}
+
+/* Film */
+.film-container{
+    display: flex;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+
+video.film{
+    max-width: 80%;
+    height: auto;
+    position: relative;
+    top: 8%;
+}
+
+
+/* About */
+.about-container{
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.about-container p{
+    display: inline-block;
+    max-width: 80%;
+}
+
+
+/* Crew */
+.crew-container{
+    position: relative;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.crew-container p #starring{
+    display: inline-block;
+}
+
+
+/* Footer */
+#footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+ul.footer-menu{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 1%;
+    margin-bottom: 0;
+    padding: 1%;
+    overflow: none;
+    background-color: #587faf;
+    border-top: 2px solid white;
+}
+
+.menuitem#credit a:hover{
+    background-color: #587faf;
+    text-decoration: none;
+    text-align: right;
+}
