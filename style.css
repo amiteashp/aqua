@@ -79,25 +79,32 @@ body h2{
     ul.menu li {text-align: center;}
 }
 
-/* Hamburger Menu */
 
-#hamburger{
+/* TopButton */
+
+#topbutton{
     display: block;
-    border-radius: 20%;
+    border-radius: 50%;
     max-width: 5%;
     height: auto;
     position: fixed;
-    top: 5%;
-    left: 2%;
+    bottom: 3%;
+    right: 2%;
     opacity: 0;
-    cursor: initial;
+    cursor: pointer;
+    z-index: 10;
     transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
 }
 
-#hamburger:hover{
+#topbutton:hover{
     background: #afe53250;
 }
+
+/* Making the topbutton size responsive */
+@media screen and (max-width: 700px) {
+    #topbutton {max-width: 10%; right: 1%;} 
+}
+
 
 /* Film */
 .film-container{
@@ -132,13 +139,20 @@ video.film{
 
 /* Crew */
 .crew-container{
-    position: relative;
+    position: flex;
     font-size: 1.2em;
     text-align: center;
+    justify-content: center;
+}
+
+.crew-container p{
+    display: inline-block;
+    max-width: 80%;
 }
 
 .crew-container p #starring{
     display: inline-block;
+    max-width: 80%;
 }
 
 
@@ -172,5 +186,4 @@ ul.footer-menu{
 .menuitem#credit a:hover{
     background-color: #587faf;
     text-decoration: none;
-    text-align: right;
 }

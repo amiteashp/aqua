@@ -1,5 +1,4 @@
-(function (document) {
-    const topbutton = document.getElementById("hamburger");
+let topbutton = document.getElementById("topbutton");
     
     window.onscroll = function () {
         if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
@@ -10,4 +9,8 @@
             topbutton.style.cursor = "initial";
         }
     };
-    })(document);
+
+    topbutton.addEventListener("click", function(){
+        document.documentElement.scrollTop = 0;
+        console.log("Click")
+    });
