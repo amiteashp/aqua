@@ -22,7 +22,7 @@ body h2{
 
 
 /* Page Dividers */
-hr.rounded{
+hr{
     position: relative;
     width: 85%;
     margin-top: 3%;
