@@ -14,5 +14,4 @@ let topbutton = document.getElementById("topbutton");
 
     topbutton.addEventListener("click", function(){
         document.documentElement.scrollTop = 0;
-        console.log("Click")
     });
